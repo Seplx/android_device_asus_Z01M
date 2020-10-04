@@ -48,25 +48,14 @@ void property_override(char const prop[], char const value[])
 
 void vendor_load_properties()
 {
-    std::string project = property_get("ro.boot.id.prj");
-    property_set("ro.product.name", "WW_Phone");
-    if (project == "6") {
-        property_override("ro.build.product", "ZE520KL");
-        property_override("ro.build.description", "WW_Phone-user 7.0 NRD90M 14.2020.1703.28-20170410 release-keys");
-        property_override("ro.build.fingerprint", "asus/WW_Phone/ASUS_Z017D_1:7.0/NRD90M/14.2020.1703.28-20170410:user/release-keys");
-        property_override("ro.product.device", "ASUS_Z017D_1");
-        property_override("ro.product.model", "ASUS_Z017D");
-        property_set("ro.product.carrier", "US-ASUS_Z017D-WW_Phone");
-        property_set("ro.hardware.id", "ZE520KL_MP");
-        property_set("ro.build.csc.version", "WW_ZE520KL-14.2020.1703.28-20170410");
-    } else if (project == "7") {
-        property_override("ro.build.product", "ZE552KL");
-        property_override("ro.build.description", "WW_Phone-user 7.0 NRD90M 14.2020.1703.28-20170410 release-keys");
-        property_override("ro.build.fingerprint", "asus/WW_Phone/ASUS_Z012D:7.0/NRD90M/14.2020.1703.28-20170410:user/release-keys");
-        property_override("ro.product.device", "ASUS_Z012D");
-        property_override("ro.product.model", "ASUS_Z012D");
-        property_set("ro.product.carrier", "US-ASUS_Z012D-WW_Phone");
-        property_set("ro.hardware.id", "ZE552KL_MP");
-        property_set("ro.build.csc.version", "WW_ZE552KL-14.2020.1703.28-20170410");
-    }
+
+        property_set("ro.product.name", "WW_Z01M");
+        property_override("ro.build.product", "Z01M");
+        property_override("ro.build.description", "marlin-user 7.1.2 NJH47F 4146041 release-keys");
+        property_override("ro.build.fingerprint", "google/marlin/marlin:7.1.2/NJH47F/4146041:user/release-keys");
+        property_override("ro.product.device", "ASUS_Z01M_1");
+        property_override("ro.product.model", "ASUS_Z01MD");
+        property_set("ro.product.carrier", "US-ASUS_Z01M-WW_Z01M");
+        property_set("ro.hardware.id", "ZD552KL_MP");
+        property_set("ro.build.csc.version", "WW_ZD552KL_71.50.395.99-20190918");
 }

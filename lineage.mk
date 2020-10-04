@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/asus/Z017/full_Z017.mk)
+$(call inherit-product, device/asus/Z01M/full_Z01M.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := Z017
-PRODUCT_NAME := lineage_Z017
+PRODUCT_DEVICE := Z01M
+PRODUCT_NAME := lineage_Z01M
 PRODUCT_BRAND := asus
 PRODUCT_MANUFACTURER := asus
 

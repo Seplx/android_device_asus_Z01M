@@ -15,10 +15,10 @@
 #
 
 # Inherit from Z017 device
-$(call inherit-product, device/asus/Z017/device.mk)
+$(call inherit-product, device/asus/Z01M/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := Z017
-PRODUCT_NAME := full_Z017
+PRODUCT_DEVICE := Z01M
+PRODUCT_NAME := full_Z01M
 
-$(call inherit-product-if-exists, vendor/asus/Z017/Z017-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/Z01M/Z01M-vendor.mk)
