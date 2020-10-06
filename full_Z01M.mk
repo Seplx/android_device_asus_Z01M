@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# Inherit from Z017 device
+# Inherit from Z01M device
 $(call inherit-product, device/asus/Z01M/device.mk)
 
 # Device identifier. This must come after all inclusions
