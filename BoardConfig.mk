@@ -51,11 +51,9 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_CPU_CORTEX_A53 := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE += cmd_line='console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000
 # DISABLE SELINUX / THIS IS A BIG SECURITY FLAW AND NEEDS TO BE FIXED
 # there is no way selinux will work with the trees currently used
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-#
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE    := 2048
 BOARD_KERNEL_BASE        := 0x80000000
 BOARD_KERNEL_OFFSET      := 0x00008000
@@ -123,7 +121,7 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/bus/i2c/devices/i2c-3/3-0038/dclick_mode"
 TARGET_HW_DISK_ENCRYPTION := true
 
 # CNE and DPM
-BOARD_USES_QCNE := true
+#BOARD_USES_QCNE := true
 
 # Display
 USE_OPENGL_RENDERER := true
@@ -152,29 +150,32 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+#TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
-TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+#TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864         #      65536 * 1024 mmcblk0p55
-BOARD_CACHEIMAGE_PARTITION_SIZE := 134217728       #     131072 * 1024 mmcblk0p20
-BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432      #      32768 * 1024 mmcblk0p21
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864     #      65536 * 1024 mmcblk0p56
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4831838208     #    4718592 * 1024 mmcblk0p61
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 56614698496  # 55287791,5 * 1024 mmcblk0p62
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864        #      65536 * 1024 mmcblk0p55
+BOARD_CACHEIMAGE_PARTITION_SIZE := 134217728      #     131072 * 1024 mmcblk0p20
+BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432     #      32768 * 1024 mmcblk0p21
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864    #      65536 * 1024 mmcblk0p56
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4831838208    #    4718592 * 1024 mmcblk0p61
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 56614698496 # 55287791,5 * 1024 mmcblk0p62
 
 # Qualcomm support
 BOARD_USES_QC_TIME_SERVICES := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_POWERHAL_VARIANT := qcom
+
+# Properties
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 # Radio
 TARGET_RIL_VARIANT := caf
@@ -184,11 +185,11 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-TARGET_KERNEL_HAVE_EXFAT := true
+#TARGET_KERNEL_HAVE_EXFAT := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
