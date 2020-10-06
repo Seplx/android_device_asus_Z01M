@@ -61,9 +61,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
-# Device was launched with M
+# Device was launched with N
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.first_api_level=23
+    ro.product.first_api_level=25
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
