@@ -11,12 +11,6 @@ framework/qmapbridge.jar
 framework/myshape-novo.jar
 framework/com.qti.dpmframework.jar
 framework/arm
-framework/arm/boot-oem-services.art
-framework/arm/boot-qcmediaplayer.art
-framework/arm/boot-WfdCommon.art
-framework/arm/boot-ifaamanager.art
-framework/arm/boot-tcmiface.art
-framework/arm/boot-qcom.fmradio.art
 framework/org.simalliance.openmobileapi.jar
 framework/qcmediaplayer.jar
 framework/com.qti.snapdragon.sdk.display.jar
@@ -37,12 +31,6 @@ framework/com.qti.location.sdk.jar
 framework/tcmiface.jar
 framework/com.asus.weatherwidget.jar
 framework/arm64
-framework/arm64/boot-oem-services.art
-framework/arm64/boot-qcmediaplayer.art
-framework/arm64/boot-WfdCommon.art
-framework/arm64/boot-ifaamanager.art
-framework/arm64/boot-tcmiface.art
-framework/arm64/boot-qcom.fmradio.art
 framework/com.google.android.maps.jar
 framework/com.asus.fm.jar
 framework/rcsservice.jar
