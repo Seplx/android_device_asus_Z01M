@@ -24,7 +24,7 @@ framework/com.google.android.media.effects.jar
 framework/com.google.widevine.software.drm.jar
 framework/com.qti.dpmframework.jar
 framework/com.qti.location.sdk.jar
-framework/com.qti.snapdragon.sdk.display.jar
+-framework/com.qti.snapdragon.sdk.display.jar
 framework/com.qualcomm.location.vzw_library.jar
 framework/com.quicinc.cne.jar
 framework/com.quicinc.wbc.jar
@@ -36,7 +36,7 @@ framework/core-libart.jar
 framework/core-oj.jar
 framework/dpm.jar
 framework/dpmapi.jar
-framework/embmslibrary.jar
+-framework/embmslibrary.jar
 framework/ethernet-service.jar
 framework/ext.jar
 framework/framework-res.apk
@@ -47,7 +47,7 @@ framework/ime.jar
 framework/ims-common.jar
 framework/imscmlibrary.jar
 framework/input.jar
-framework/izat.xt.srv.jar
+-framework/izat.xt.srv.jar
 framework/javax.obex.jar
 framework/media_cmd.jar
 framework/monkey.jar
@@ -65,7 +65,7 @@ framework/qcmediaplayer.jar
 framework/qcom.fmradio.jar
 -framework/qcrilhook.jar
 framework/qmapbridge.jar
-framework/qti-telephony-common.jar
+-framework/qti-telephony-common.jar
 framework/rcs_service_aidl.jar
 framework/rcs_service_api.jar
 framework/rcsimssettings.jar
@@ -809,7 +809,7 @@ vendor/lib64/libwqe.so
 vendor/lib64/lib-rcsimssjni.so
 vendor/lib64/libmmipstreamutils.so
 vendor/lib64/lib-imsrcs.so
-vendor/lib64/libtime_genoff.so
+-vendor/lib64/libtime_genoff.so
 vendor/lib64/lib-imsvt.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/sensor_calibrate.so
@@ -1343,7 +1343,7 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libmmipstreamutils.so
 vendor/lib/lib-imsrcs.so
 vendor/lib/libseemore.so
-vendor/lib/libtime_genoff.so
+-vendor/lib/libtime_genoff.so
 vendor/lib/lib-imsvt.so
 vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
 vendor/lib/libactuator_ad5823.so
