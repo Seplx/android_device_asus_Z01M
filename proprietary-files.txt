@@ -560,7 +560,6 @@ vendor/lib64/libfastcvopt.so
 vendor/lib64/libmmparser_lite.so
 vendor/lib64/libscveObjectMatting_stub.so
 vendor/lib64/libscveCleverCapture.so
-vendor/lib64/com.quicinc.cne.api@1.0.so
 vendor/lib64/libmmsw_opencl.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmcamera2_stats_algorithm.so
@@ -1183,7 +1182,6 @@ vendor/lib/libgsl.so
 vendor/lib/libmmcamera_isp_scaler_viewfinder44.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libwvdrm_L1.so
-vendor/lib/com.quicinc.cne.server@2.0.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libsdm-color.so
 vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so
@@ -1283,7 +1281,6 @@ vendor/lib/libFidoSuiJNI.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libwfdmmsrc.so
-vendor/lib/com.quicinc.cne.server@1.0.so
 vendor/lib/libbccQTI.so
 vendor/lib/libStDrvInt.so
 vendor/lib/libwqe.so
