@@ -719,7 +719,6 @@ vendor/lib64/libconnctrl.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libgsl.so
-vendor/lib64/com.quicinc.cne.server@2.0.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libevent_observer.so
 vendor/lib64/libmm-qdcm.so
@@ -769,7 +768,6 @@ vendor/lib64/libFidoSuiJNI.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libwfdmmsrc.so
-vendor/lib64/com.quicinc.cne.server@1.0.so
 vendor/lib64/libbccQTI.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libwqe.so
@@ -899,7 +897,6 @@ vendor/lib/libsregex.so
 vendor/lib/libmmcamera_isp_clamp_video40.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
 vendor/lib/libscveCleverCapture.so
-vendor/lib/com.quicinc.cne.api@1.0.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmsw_opencl.so
 vendor/lib/libchromatix_imx362_cpp_default_vhdr_video.so
@@ -976,7 +973,6 @@ vendor/lib/libmmcamera_imx362.so
 vendor/lib/libchromatix_imx362_isp_default_vhdr_video.so
 vendor/lib/libchromatix_imx362_postproc_default.so
 vendor/lib/libcne.so
-vendor/lib/libgpustats.so
 vendor/lib/libqti_performance.so
 vendor/lib/libadsprpc.so
 vendor/lib/liblistensoundmodel2.so
