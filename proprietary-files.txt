@@ -366,7 +366,6 @@ lib64/libdts-eagle-shared.so
 lib64/sensors.PS_ALS.msm8953.so
 lib64/libloc_ds_api.so
 lib64/libjni.so
-lib64/hw
 lib64/hw/gps.default.so
 lib64/hw/power.qcom.so
 lib64/hw/gxfingerprint.default.so
@@ -414,7 +413,6 @@ lib64/libfpjni.so
 #lib
 
 lib/libjpeggifcodec.so
-lib/soundfx
 lib/soundfx/libeagle.so
 lib/libmorpho_easy_hdr.so
 lib/libarcsoft_panorama_burstcapture.so
@@ -495,18 +493,13 @@ lib/libOmxVpp.so
 lib/librecovery_updater_msm.so
 lib/libextmedia_jni.so
 lib/libdts-dtscs.so
-lib/DataSet
-lib/DataSet/ispDB
 lib/DataSet/ispDB/ParameterDB.db
-lib/DataSet/ditSCidGen
 lib/DataSet/ditSCidGen/msgchk.db
-lib/DataSet/arch
 lib/DataSet/arch/DIT_List.cfg
 
 
 #vendor
 vendor/framework/qti-vzw-ims-internal.jar
-vendor/bin
 vendor/bin/mm-pp-dpps
 vendor/bin/hbtp_daemon
 vendor/bin/qseeproxydaemon
@@ -525,13 +518,10 @@ vendor/bin/LKCore
 vendor/bin/qseeproxysampledaemon
 vendor/bin/mm-qomx-idec-test
 vendor/bin/RIDLClient.exe
-vendor/firmware
 vendor/firmware/preisp.rkl
 vendor/qcril.db
-vendor/lib64
 vendor/lib64/libscveImageCorrection.so
 vendor/lib64/librs_adreno.so
-vendor/lib64/soundfx
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libqcbassboost.so
@@ -601,7 +591,6 @@ vendor/lib64/libSecureExtAuthJNI.so
 vendor/lib64/lib-imss.so
 vendor/lib64/libimsmedia_jni.so
 vendor/lib64/libqmi_common_so.so
-vendor/lib64/hw
 vendor/lib64/hw/activity_recognition.msm8953.so
 vendor/lib64/hw/gatekeeper.msm8953.so
 vendor/lib64/hw/keystore.msm8953.so
@@ -832,13 +821,11 @@ vendor/lib64/lib-ims-rcscmjni.so
 vendor/lib64/libwms.so
 vendor/lib64/libwfduibcinterface.so
 vendor/lib64/libI420colorconvert.so
-vendor/lib
 vendor/lib/libchromatix_imx351_cpp_binning_auto_preview.so
 vendor/lib/libmmcamera_isp_mesh_rolloff40.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libscveImageCorrection.so
 vendor/lib/librs_adreno.so
-vendor/lib/soundfx
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -971,7 +958,6 @@ vendor/lib/libimsmedia_jni.so
 vendor/lib/libchromatix_imx351_isp_binning_capture.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libqmi_common_so.so
-vendor/lib/hw
 vendor/lib/hw/activity_recognition.msm8953.so
 vendor/lib/hw/gatekeeper.msm8953.so
 vendor/lib/hw/keystore.msm8953.so
@@ -1085,7 +1071,6 @@ vendor/lib/libaudcal.so
 vendor/lib/libdsutils.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libscveObjectSegmentation.so
-vendor/lib/egl
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libQTapGLES.so
@@ -1123,12 +1108,7 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libchromatix_imx362_cpp_default_auto_video.so
 vendor/lib/libOmxApeDecSw.so
 vendor/lib/libscalar.so
-vendor/lib/qcdrm
-vendor/lib/qcdrm/playready
-vendor/lib/qcdrm/playready/lib
-vendor/lib/qcdrm/playready/lib/drm
 vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm
 vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
 vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
@@ -1223,7 +1203,6 @@ vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libnative_audio_latency_jni.so
 vendor/lib/libactuator_bu64244gwz.so
 vendor/lib/libevent_observer.so
-vendor/lib/mediadrm
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libchromatix_imx351_isp_binning_auto_video.so
 vendor/lib/libmm-qdcm.so
@@ -1258,8 +1237,6 @@ vendor/lib/lib-rtpcore.so
 vendor/lib/libchromatix_imx351_isp_binning_vhdr_capture.so
 vendor/lib/libactuator_dw9761b.so
 vendor/lib/libmmcamera_isp_cs_stats44.so
-vendor/lib/rfsa
-vendor/lib/rfsa/adsp
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
@@ -1426,38 +1403,29 @@ vendor/lib/libI420colorconvert.so
 -vendor/app/ims/lib/arm64/libimscamera_jni.so
 -vendor/app/ims/ims.apk
 -vendor/app/SVIService/SVIService.apk
-vendor/media
 vendor/media/PFFprec_600.emd
 vendor/media/LMspeed_508.emd
 vendor/etc/public.libraries.txt
 vendor/etc/workspace_grid_setting.xml
-vendor/etc/qti-logkit
 vendor/etc/qti-logkit/qti_logkit_command.xml
 vendor/etc/qti-logkit/goldenlogmask.dmc
 vendor/etc/qti-logkit/qti_logkit_config.xml
 vendor/etc/qti-logkit/audiobasic.dmc
 vendor/etc/qti-logkit/gnsslocationlogging.dmc
 vendor/etc/qti-logkit/IMS.dmc
-vendor/etc/Splendid
 vendor/etc/Splendid/asussplendid_config.xml
-vendor/etc/Splendid/LUT
 vendor/etc/Splendid/LUT/LUT_GMC01.txt
 vendor/etc/Splendid/LUT/LUT_Rd03.txt
 vendor/etc/style.cng
-vendor/etc/RIDL
 vendor/etc/RIDL/qdss.cfg
 vendor/etc/RIDL/GoldenLogmask.dmc
 vendor/etc/RIDL/OTA-Logs.dmc
 vendor/etc/RIDL/RIDL.db
-vendor/etc/scve
-vendor/etc/scve/textreco
-vendor/etc/scve/textreco/textdetector
 vendor/etc/scve/textreco/textdetector/dcnConfigForMultiCNN.txt
 vendor/etc/scve/textreco/textdetector/nontextremoval_eng.model
 vendor/etc/scve/textreco/textdetector/dcnConfigForEngCNN.txt
 vendor/etc/scve/textreco/textdetector/nontextremoval_multilang.model
 vendor/etc/scve/textreco/textdetector/forestData.bin
-vendor/etc/scve/textreco/worddecoder
 vendor/etc/scve/textreco/worddecoder/english_address_20150213.bin
 vendor/etc/scve/textreco/worddecoder/chinese.lm
 vendor/etc/scve/textreco/worddecoder/chinese_address_20150304.bin
@@ -1465,7 +1433,6 @@ vendor/etc/scve/textreco/worddecoder/korean_address_20150129.bin
 vendor/etc/scve/textreco/worddecoder/korean.lm
 vendor/etc/scve/textreco/worddecoder/english_dictionary_20150213.bin
 vendor/etc/scve/textreco/worddecoder/korean_dictionary_20150414.bin
-vendor/etc/scve/textreco/chardecoder
 vendor/etc/scve/textreco/chardecoder/_numpunc_font40_4transmeshrnorm_leafnum1.trn9614.trn
 vendor/etc/scve/textreco/chardecoder/_numpunc_font40_conc2_DEFn__BGTouchy6x6n__1_1__morph.trn32025.trn
 vendor/etc/scve/textreco/chardecoder/hGLVQ_kor_RLF80_float.hie
@@ -1479,12 +1446,11 @@ vendor/etc/scve/textreco/chardecoder/ChinesePunctuation.rst
 vendor/etc/scve/textreco/chardecoder/GLVQDecoder_fixed.ohie
 vendor/etc/scve/textreco/chardecoder/cnn_small5_synthrev_sw_sampled2_bin
 vendor/etc/scve/textreco/chardecoder/_conf_eng_num_sym_font40_4transd_zscore_morph_.trn2876.trn
-vendor/etc/scve/textreco/chardecoder_eng_font40_4transmeshrnorm6x6_leaflda85_ligature_ext14_c70_sp1lI_newxml3.trn31299.trn
+vendor/etc/scve/textreco/chardecoder/_eng_font40_4transmeshrnorm6x6_leaflda85_ligature_ext14_c70_sp1lI_newxml3.trn31299.trn
 vendor/etc/scve/textreco/chardecoder/LDA_kor_consonant_19classes_64dim_linearNorm.dat
 vendor/etc/scve/textreco/chardecoder/_numpunc_parteng_font40_4transmeshr_morph.trn400.trn
 vendor/etc/scve/textreco/chardecoder/_conf_eng_num_sym_font40_conc2_meshrn__de__1_1__zscore_morph.trn10158.trn
 vendor/etc/scve/textreco/chardecoder/glvq_kor_consonant_19classes_64_16dim_i0_linearNorm.dat
-vendor/etc/scve/facereco
 vendor/etc/scve/facereco/gModel.dat
 
 
@@ -1514,7 +1480,6 @@ vendor/etc/scve/facereco/gModel.dat
 
 etc/audio.cfg
 etc/Compact_mode.cfg
-etc/cust_pms/CountryCode
 etc/cust_pms/CountryCode/IN.xml
 etc/cust_pms/CountryCode/RU.xml
 etc/cust_pms/CountryCode/DE.xml
@@ -1586,7 +1551,6 @@ etc/firmware/cpp_firmware_v1_8_0.fw
 etc/firmware/nvm_tlv_1.3.bin
 etc/firmware/cmnlib.b01
 etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/hbtp
 etc/firmware/hbtp/qtc800s_dsp.bin
 etc/firmware/hbtp/hbtpcfg.dat
 etc/firmware/widevine.b06
@@ -1653,11 +1617,9 @@ etc/firmware/a530v3_seq.fw2
 etc/firmware/a530v2_seq.fw2
 etc/firmware/ifaata.b02
 etc/firmware/goodixfp.b02
-etc/firmware/ZD552KL_PHOENIX
 etc/firmware/ZD552KL_PHOENIX/adsp.b11
 etc/firmware/ZD552KL_PHOENIX/venus.b00
 etc/firmware/ZD552KL_PHOENIX/venus.b02
-etc/firmware/ZD552KL_PHOENIX/ois_fw
 etc/firmware/ZD552KL_PHOENIX/ois_fw/OIS_coefficientFW.mem
 etc/firmware/ZD552KL_PHOENIX/ois_fw/OIS_programFW.bin
 etc/firmware/ZD552KL_PHOENIX/venus.b03
@@ -1699,12 +1661,10 @@ etc/firmware/a530v3_gpmu.fw2
 etc/firmware/widevine.b04
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/a530v1_pm4.fw
-etc/firmware/phone_ct
 etc/firmware/phone_ct/LUT_C03.txt
 etc/firmware/phone_ct/LUT_C02.txt
 etc/firmware/phone_ct/LUT_W06.txt
 etc/firmware/phone_ct/LUT_C07.txt
-etc/firmware/phone_ct/ZD552KL_TM
 etc/firmware/phone_ct/ZD552KL_TM/LUT_GMPC14.txt
 etc/firmware/phone_ct/ZD552KL_TM/LUT_GMPW12.txt
 etc/firmware/phone_ct/ZD552KL_TM/LUT_GMPRdStrong.txt
@@ -1984,9 +1944,7 @@ etc/acdbdata/QRD/QRD_General_cal.acdb
 etc/acdbdata/QRD/QRD_Handset_cal.acdb
 etc/acdbdata/QRD/QRD_Global_cal.acdb
 etc/acdbdata/QRD/QRD_Headset_cal.acdb
-etc/acdbdata/MTP
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-etc/acdbdata/MTP/msm8953-tasha-snd-card
 etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb
 etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb
 etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
@@ -1997,7 +1955,6 @@ etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb
 etc/acdbdata/MTP/MTP_Handset_cal.acdb
 etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-etc/acdbdata/MTP/ZD552KL
 etc/acdbdata/MTP/ZD552KL/MTP_General_cal_ZD552KL.acdb
 etc/acdbdata/MTP/ZD552KL/MTP_Bluetooth_cal_ZD552KL.acdb
 etc/acdbdata/MTP/ZD552KL/MTP_Headset_cal_ZD552KL.acdb
@@ -2005,7 +1962,6 @@ etc/acdbdata/MTP/ZD552KL/MTP_Hdmi_cal_ZD552KL.acdb
 etc/acdbdata/MTP/ZD552KL/MTP_Speaker_cal_ZD552KL.acdb
 etc/acdbdata/MTP/ZD552KL/MTP_Handset_cal_ZD552KL.acdb
 etc/acdbdata/MTP/ZD552KL/MTP_Global_cal_ZD552KL.acdb
-etc/acdbdata/MTP/ZE553KL
 etc/acdbdata/MTP/ZE553KL/MTP_Speaker_cal_ZE553KL.acdb
 etc/acdbdata/MTP/ZE553KL/MTP_Hdmi_cal_ZE553KL.acdb
 etc/acdbdata/MTP/ZE553KL/MTP_General_cal_ZE553KL.acdb
@@ -2020,7 +1976,6 @@ etc/adsp.cfg
 etc/spn-conf.xml
 etc/mmosal_logmask.cfg
 etc/dpm/dpm.conf
-etc/dpm/nsrm
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/dts/current_speaker_on
 etc/dts/GEQ_configs
@@ -2043,30 +1998,26 @@ etc/init.crda.sh
 etc/init.asus.checkdatalog.sh
 etc/hcidump.sh
 etc/init.qcom.sdio.sh
-etc/cne/wqeclient
-etc/cne/wqeclient/ATT
-etc/cne/wqeclient/ATT/ATT_profile2.xml
-etc/cne/wqeclient/ATT/ATT_profile4.xml
-etc/cne/wqeclient/ATT/ATT_profile3.xml
 etc/cne/wqeclient/ATT/ATT_profile1.xml
-etc/cne/wqeclient/VZW
-etc/cne/wqeclient/VZW/VZW_profile2.xml
-etc/cne/wqeclient/VZW/VZW_profile4.xml
-etc/cne/wqeclient/VZW/VZW_profile3.xml
+etc/cne/wqeclient/ATT/ATT_profile2.xml
+etc/cne/wqeclient/ATT/ATT_profile3.xml
+etc/cne/wqeclient/ATT/ATT_profile4.xml
 etc/cne/wqeclient/VZW/VZW_profile1.xml
+etc/cne/wqeclient/VZW/VZW_profile2.xml
+etc/cne/wqeclient/VZW/VZW_profile3.xml
+etc/cne/wqeclient/VZW/VZW_profile4.xml
 etc/cne/wqeclient/VZW/VZW_profile5.xml
 etc/cne/wqeclient/VZW/VZW_profile6.xml
-etc/cne/wqeclient/profile4.xml
-etc/cne/wqeclient/ROW
 etc/cne/wqeclient/ROW/ROW_profile3.xml
 etc/cne/wqeclient/ROW/ROW_profile5.xml
 etc/cne/wqeclient/ROW/ROW_profile1.xml
 etc/cne/wqeclient/ROW/ROW_profile4.xml
 etc/cne/wqeclient/ROW/ROW_profile2.xml
 etc/cne/wqeclient/profile1.xml
-etc/cne/wqeclient/profile5.xml
-etc/cne/wqeclient/profile3.xml
 etc/cne/wqeclient/profile2.xml
+etc/cne/wqeclient/profile3.xml
+etc/cne/wqeclient/profile4.xml
+etc/cne/wqeclient/profile5.xml
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
 etc/wifi_bt.cfg
