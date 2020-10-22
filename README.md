@@ -1,3 +1,5 @@
+# not yet ready
+
 # Device Tree for ASUS Zenfone 4 Selfie Pro (ZD552KL)
 
 Testing repo for the Z01M Device Tree
