@@ -1,4 +1,4 @@
-# not yet ready
+# WIP
 
 # Device Tree for ASUS Zenfone 4 Selfie Pro (ZD552KL)
 
