@@ -21,40 +21,93 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
-    frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-    frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-    frameworks/native/data/etc/android.hardware.camera.full.xml:system/etc/permissions/android.hardware.camera.full.xml \
-    frameworks/native/data/etc/android.hardware.camera.manual_postprocessing.xml:system/etc/permissions/android.hardware.camera.manual_postprocessing.xml \
-    frameworks/native/data/etc/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml \
-    frameworks/native/data/etc/android.hardware.camera.raw.xml:system/etc/permissions/android.hardware.camera.raw.xml \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
-    frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
-    frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
-    frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
-    frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
-    frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
-    frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:system/etc/permissions/android.hardware.sensor.stepdetector.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
-    frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:system/etc/permissions/android.hardware.vulkan.level.xml \
-    frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version.xml \
-    frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-    frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
-    frameworks/native/data/etc/android.software.print.xml:system/etc/permissions/android.software.print.xml \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-    frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
-
+    $(LOCAL_PATH)/configs/permissions/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.camera.manual_postprocessing.xml:system/etc/permissions/android.hardware.camera.manual_postprocessing.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.camera.raw.xml:system/etc/permissions/android.hardware.camera.raw.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.sensor.stepdetector.xml:system/etc/permissions/android.hardware.sensor.stepdetector.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.vulkan.level-0.xml:system/etc/permissions/android.hardware.vulkan.level-0.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version-1_0_3.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+    $(LOCAL_PATH)/configs/permissions/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+    $(LOCAL_PATH)/configs/permissions/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.alwayson.xml:system/etc/permissions/asus.hardware.alwayson.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.display.pq_chip.xml:system/etc/permissions/asus.hardware.display.pq_chip.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.display.splendid.reading_mode.xml:system/etc/permissions/asus.hardware.display.splendid.reading_mode.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.display.splendid.xml:system/etc/permissions/asus.hardware.display.splendid.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.glove.xml:system/etc/permissions/asus.hardware.glove.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.touchgesture.double_tap.xml:system/etc/permissions/asus.hardware.touchgesture.double_tap.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.touchgesture.launch_app.xml:system/etc/asus.hardware.touchgesture.launch_app.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.hardware.touchgesture.swipe_up.xml:system/etc/permissions/asus.hardware.touchgesture.swipe_up.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.battery.smart_charging.xml:system/etc/permissions/asus.software.battery.smart_charging.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.camera.xml:system/etc/permissions/asus.software.camera.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.cr.virtualkey.xml:system/etc/permissions/asus.software.cr.virtualkey.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.gamewidget.zenui40.xml:system/etc/permissions/asus.software.gamewidget.zenui40.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.lockscreen.cmweather.xml:system/etc/permissions/asus.software.lockscreen.cmweather.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.marketapp.xml:system/etc/permissions/asus.software.marketapp.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.pagemarker.xml:system/etc/permissions/asus.software.pagemarker.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.project.ZD552KL.xml:system/etc/permissions/asus.software.project.ZD552KL.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.sensor_service.eartouch.xml:system/etc/permissions/asus.software.sensor_service.eartouch.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.sensor_service.terminal.xml:system/etc/permissions/asus.software.sensor_service.terminal.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.sensor_service.xml:system/etc/permissions/asus.software.sensor_service.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.sku.WW.xml:system/etc/permissions/asus.software.sku.WW.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.smartgallery.xml:system/etc/permissions/asus.software.smartgallery.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.themes_store.xml:system/etc/permissions/asus.software.themes_store.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.twinapps.xml:system/etc/permissions/asus.software.twinapps.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.vibration.intensity.xml:system/etc/permissions/asus.software.vibration.intensity.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.whole_system_onehand.xml:system/etc/permissions/asus.software.whole_system_onehand.xml \
+    $(LOCAL_PATH)/configs/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    $(LOCAL_PATH)/configs/permissions/com.android.mediadrm.signer.xml:system/etc/com.android.mediadrm.signer.xml \
+    $(LOCAL_PATH)/configs/permissions/com.asus.fm.xml:system/etc/permissions/com.asus.fm.xml \
+    $(LOCAL_PATH)/configs/permissions/com.asus.weatherwidget.xml:system/etc/permissions/com.asus.weatherwidget.xml \
+    $(LOCAL_PATH)/configs/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
+    $(LOCAL_PATH)/configs/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
+    $(LOCAL_PATH)/configs/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+    $(LOCAL_PATH)/configs/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+    $(LOCAL_PATH)/configs/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    $(LOCAL_PATH)/configs/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
+    $(LOCAL_PATH)/configs/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    $(LOCAL_PATH)/configs/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    $(LOCAL_PATH)/configs/permissions/com.quicinc.wbc.xml:system/etc/permissions/com.quicinc.wbc.xml \
+    $(LOCAL_PATH)/configs/permissions/com.quicinc.wbcservice.xml:system/etc/permissions/com.quicinc.wbcservice.xml \
+    $(LOCAL_PATH)/configs/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    $(LOCAL_PATH)/configs/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    $(LOCAL_PATH)/configs/permissions/embms.xml:system/etc/permissions/embms.xml \
+    $(LOCAL_PATH)/configs/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+    $(LOCAL_PATH)/configs/permissions/im-novo.xml:system/etc/permissions/im-novo.xml \
+    $(LOCAL_PATH)/configs/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+    $(LOCAL_PATH)/configs/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
+    $(LOCAL_PATH)/configs/permissions/myinksearch-novo.xml:system/etc/permissions/myinksearch-novo.xml \
+    $(LOCAL_PATH)/configs/permissions/myscriptengine-novo.xml:system/etc/permissions/myscriptengine-novo.xml \
+    $(LOCAL_PATH)/configs/permissions/myscripthwr-novo.xml:system/etc/permissions/myscripthwr-novo.xml \
+    $(LOCAL_PATH)/configs/permissions/myshape-novo.xml:system/etc/permissions/myshape-novo.xml \
+    $(LOCAL_PATH)/configs/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
+    $(LOCAL_PATH)/configs/permissions/qcom_logkit.xml:system/etc/permissions/qcom_logkit.xml \
+    $(LOCAL_PATH)/configs/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    $(LOCAL_PATH)/configs/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    $(LOCAL_PATH)/configs/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
+    $(LOCAL_PATH)/configs/permissions/rcs_service_aidl.xml:system/etc/permissions/rcs_service_aidl.xml \
+    $(LOCAL_PATH)/configs/permissions/rcs_service_api.xml:system/etc/permissions/rcs_service_api.xml
+    
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/asus.software.azs.xml:system/etc/permissions/asus.software.azs.xml \
+    $(LOCAL_PATH)/configs/permissions/asus.software.azs.xml:system/etc/permissions/asus.software.azs.xmzwn \
     $(LOCAL_PATH)/configs/permissions/asus.software.zenui.xml:system/etc/permissions/asus.software.zenui.xml
 
 # Screen density
@@ -86,6 +139,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
+    libshim_adsp \
     libvolumelistener \
     tinymix
 
@@ -94,6 +148,8 @@ PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/configs/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_skuk.xml:system/etc/audio_policy_non_eu_volumes_Z01M.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_skuk.xml:system/etc/audio_policy_volumes_Z01M.xml \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/configs/audio/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
     $(LOCAL_PATH)/configs/audio/audio_platform_info_extcodec.xml:system/etc/audio_platform_info_extcodec.xml \
@@ -104,11 +160,12 @@ PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/configs/audio/mixer_paths_qrd_skuhf.xml:system/etc/mixer_paths_qrd_skuhf.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_qrd_skum.xml:system/etc/mixer_paths_qrd_skum.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_qrd_sku3.xml:system/etc/mixer_paths_qrd_sku3.xml \
-    $(LOCAL_PATH)/configs/audio/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_wcd9306.xml:system/etc/mixer_paths_wcd9306.xml \
-    $(LOCAL_PATH)/configs/audio/mixer_paths_wcd9335.xml:system/etc/mixer_paths_wcd9335.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_wcd9326.xml:system/etc/mixer_paths_wcd9326.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_wcd9335.xml:system/etc/mixer_paths_wcd9335.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_qrd_skun.xml:system/etc/mixer_paths_qrd_skun.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_skuk.xml:system/etc/mixer_paths_skuk.xmlun.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_skuk.xml:system/etc/mixer_paths_skuk.xml
 
 # Voice recognition
@@ -145,49 +202,31 @@ PRODUCT_PACKAGES += \
     libshim_camera
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/msm8996_camera.xml:system/etc/camera/msm8996_camera.xml \
-    $(LOCAL_PATH)/configs/camera/msm8937_camera.xml:system/etc/camera/msm8937_camera.xml \
-    $(LOCAL_PATH)/configs/camera/msm8952_camera.xml:system/etc/camera/msm8952_camera.xml \
-    $(LOCAL_PATH)/configs/camera/msm8953_camera.xml:system/etc/camera/msm8953_camera.xml \
+    $(LOCAL_PATH)/configs/camera/camera_config.xml:system/etc/camera/camera_config.xml \
     $(LOCAL_PATH)/configs/camera/csidtg_camera.xml:system/etc/camera/csidtg_camera.xml \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_352x288_30_1.conf:system/etc/camera/Invensense/VStab_352x288_30_1.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_640x480_30_0.conf:system/etc/camera/Invensense/VStab_640x480_30_0.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_720x480_30_1.conf:system/etc/camera/Invensense/VStab_720x480_30_1.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1920x1080_30_0.conf:system/etc/camera/Invensense/VStab_1920x1080_30_0.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1280x720_30_0.conf:system/etc/camera/Invensense/VStab_1280x720_30_0.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_176x144_30_1.conf:system/etc/camera/Invensense/VStab_176x144_30_1.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_352x288_30_0.conf:system/etc/camera/Invensense/VStab_352x288_30_0.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_640x480_30_1.conf:system/etc/camera/Invensense/VStab_640x480_30_1.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1920x1080_30_1.conf:system/etc/camera/Invensense/VStab_1920x1080_30_1.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1280x720_30_1.conf:system/etc/camera/Invensense/VStab_1280x720_30_1.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_320x240_30_1.conf:system/etc/camera/Invensense/VStab_320x240_30_1.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_320x240_30_0.conf:system/etc/camera/Invensense/VStab_320x240_30_0.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_176x144_30_0.conf:system/etc/camera/Invensense/VStab_176x144_30_0.conf \
-    $(LOCAL_PATH)/configs/camera/Invensense/VStab_720x480_30_0.conf:system/etc/camera/Invensense/VStab_720x480_30_0.conf \
-    $(LOCAL_PATH)/configs/camera/imx214_chromatix.xml:system/etc/camera/imx214_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx230_qc2002_chromatix.xml:system/etc/camera/imx230_qc2002_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx230_qc2002_with_gyro_chromatix.xml:system/etc/camera/imx230_qc2002_with_gyro_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx230_chromatix.xml:system/etc/camera/imx230_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx258_chromatix.xml:system/etc/camera/imx258_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx258_mono_chromatix.xml:system/etc/camera/imx258_mono_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/s5k3m2xm_chromatix_bear.xml:system/etc/camera/s5k3m2xm_chromatix_bear.xml \
-    $(LOCAL_PATH)/configs/camera/s5k3m2xm_chromatix.xml:system/etc/camera/s5k3m2xm_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/s5k3m2xx_chromatix.xml:system/etc/camera/s5k3m2xx_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/s5k3l8_mono_chromatix.xml:system/etc/camera/s5k3l8_mono_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/s5k3l8_f3l8yam_chromatix.xml:system/etc/camera/s5k3l8_f3l8yam_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/s5k3l8_chromatix.xml:system/etc/camera/s5k3l8_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/csidtg_chromatix.xml:system/etc/camera/csidtg_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov13850_chromatix.xml:system/etc/camera/ov13850_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov13850_q13v06k_chromatix.xml:system/etc/camera/ov13850_q13v06k_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov8858_chromatix.xml:system/etc/camera/ov8858_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov8856_chromatix.xml:system/etc/camera/ov8856_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov8865_chromatix.xml:system/etc/camera/ov8865_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov5670_f5670bq_chromatix.xml:system/etc/camera/ov5670_f5670bq_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov5670_chromatix.xml:system/etc/camera/ov5670_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov5695_chromatix.xml:system/etc/camera/ov5695_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov4688_chromatix.xml:system/etc/camera/ov4688_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov2680_chromatix.xml:system/etc/camera/ov2680_chromatix.xml
+    $(LOCAL_PATH)/configs/camera/imx351_chromatix.xml:system/etc/camera/imx351_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/imx351_chromatix_factory.xml:system/etc/camera/imx351_chromatix_factory.xml \
+    $(LOCAL_PATH)/configs/camera/imx362_chromatix.xml:system/etc/camera/imx362_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/imx362_chromatix_factory.xml:system/etc/camera/imx362_chromatix_factory.xml \
+    $(LOCAL_PATH)/configs/camera/msm8953_camera_ZD552KL_PHOENIX.xml:system/etc/camera/msm8953_camera_ZD552KL_PHOENIX.xml \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1280x720_30_0.conf:system/etc/camera/VStab_1280x720_30_0.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1280x720_30_1.conf:system/etc/camera/VStab_1280x720_30_1.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1280x720_30_2.conf:system/etc/camera/VStab_1280x720_30_2.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_176x144_30_0.conf:system/etc/camera/VStab_176x144_30_0.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_176x144_30_1.conf:system/etc/camera/VStab_176x144_30_1.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1920x1080_30_0.conf:system/etc/camera/VStab_1920x1080_30_0.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1920x1080_30_1.conf:system/etc/camera/VStab_1920x1080_30_1.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_1920x1080_30_2.conf:system/etc/camera/VStab_1920x1080_30_2.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_320x240_30_0.conf:system/etc/camera/VStab_320x240_30_0.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_320x240_30_1.conf:system/etc/camera/VStab_320x240_30_1.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_352x288_30_0.conf:system/etc/camera/VStab_352x288_30_0.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_352x288_30_1.conf:system/etc/camera/VStab_352x288_30_1.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_640x480_30_0.conf:system/etc/camera/VStab_640x480_30_0.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_640x480_30_1.conf:system/etc/camera/VStab_640x480_30_1.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_640x480_30_2.conf:system/etc/camera/VStab_640x480_30_2.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_720x480_30_0.conf:system/etc/camera/VStab_720x480_30_0.conf \
+    $(LOCAL_PATH)/configs/camera/Invensense/VStab_720x480_30_1.conf:system/etc/camera/VStab_720x480_30_1.conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bspcapability.xml:system/etc/bspcapability.xml \
@@ -242,10 +281,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
-
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
@@ -253,16 +288,71 @@ PRODUCT_COPY_FILES += \
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/ASUS_TransKeyboard.kl:system/usr/keylayout/ASUS_TransKeyboard.kl \
-    $(LOCAL_PATH)/configs/keylayout/focal-touchscreen.kl:system/usr/keylayout/focal-touchscreen.kl \
-    $(LOCAL_PATH)/configs/keylayout/goodixfp.kl:system/usr/keylayout/goodixfp.kl \
-#    $(LOCAL_PATH)/configs/keylayout/ft5x06_ts.kl:system/usr/keylayout/ft5x06_ts.kl \
-#    $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-#    $(LOCAL_PATH)/configs/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl \
-#    $(LOCAL_PATH)/configs/keylayout/synaptics_dsxv26.kl:system/usr/keylayout/synaptics_dsxv26.kl \
-#    $(LOCAL_PATH)/configs/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
+    $(LOCAL_PATH)/configs/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    $(LOCAL_PATH)/configs/keylayout/AVRCP_ORIGINAL.kl:system/usr/keylayout/AVRCP_ORIGINAL.kl \
+    $(LOCAL_PATH)/configs/keylayout/Cellways.kl:system/usr/keylayout/Cellways.kl \
+    $(LOCAL_PATH)/configs/keylayout/ft5x06_ts.kl:system/usr/keylayout/ft5x06_ts.kl \
+    $(LOCAL_PATH)/configs/keylayout/fts_cap.kl:system/usr/keylayout/fts_cap.kl \
+    $(LOCAL_PATH)/configs/keylayout/fts_tstouch.kl:system/usr/keylayout/fts_tstouch.kl \
+    $(LOCAL_PATH)/configs/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
+    $(LOCAL_PATH)/configs/keylayout/goodix_fp.kl:system/usr/keylayout/goodix_fp.kl \
+    $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/configs/keylayout/i-rocks_Bluetooth_Keyboard.kl:system/usr/keylayout/i-rocks_Bluetooth_Keyboard.kl \
+    $(LOCAL_PATH)/configs/keylayout/OSM.kl:system/usr/keylayout/OSM.kl \
+    $(LOCAL_PATH)/configs/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
+    $(LOCAL_PATH)/configs/keylayout/synaptics_dsx.kl:system/usr/keylayout/synaptics_dsx.kl \
+    $(LOCAL_PATH)/configs/keylayout/synaptics_dsxv26.kl:system/usr/keylayout/synaptics_dsxv26.kl \
+    $(LOCAL_PATH)/configs/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_0079_Product_0011.kl:system/usr/keylayout/Vendor_0079_Product_0011.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_028e.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_b501.kl:system/usr/keylayout/Vendor_046d_Product_b501.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_c216.kl:system/usr/keylayout/Vendor_046d_Product_c216.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_c219.kl:system/usr/keylayout/Vendor_046d_Product_c219.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_c21d.kl:system/usr/keylayout/Vendor_046d_Product_c21d.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_c21f.kl:system/usr/keylayout/Vendor_046d_Product_c21f.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_c294.kl:system/usr/keylayout/Vendor_046d_Product_c294.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_c299.kl:system/usr/keylayout/Vendor_046d_Product_c299.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_046d_Product_c532.kl:system/usr/keylayout/Vendor_046d_Product_c532.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_0583_Product_2060.kl:system/usr/keylayout/Vendor_0583_Product_2060.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_0b05_Product_17fc.kl:system/usr/keylayout/Vendor_0b05_Product_17fc.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_0b05_Product_1803.kl:system/usr/keylayout/Vendor_0b05_Product_1803.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_0b05_Product_4500.kl:system/usr/keylayout/Vendor_0b05_Product_4500.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_0b05_Product_5000.kl:system/usr/keylayout/Vendor_0b05_Product_5000.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1038_Product_1412.kl:system/usr/keylayout/Vendor_1038_Product_1412.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_12bd_Product_d015.kl:system/usr/keylayout/Vendor_12bd_Product_d015.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1532_Product_0900.kl:system/usr/keylayout/Vendor_1532_Product_0900.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1689_Product_fd00.kl:system/usr/keylayout/Vendor_1689_Product_fd00.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1689_Product_fd01.kl:system/usr/keylayout/Vendor_1689_Product_fd01.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1689_Product_fe00.kl:system/usr/keylayout/Vendor_1689_Product_fe00.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_18d1_Product_2c40.kl:system/usr/keylayout/Vendor_18d1_Product_2c40.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_18d1_Product_5018.kl:system/usr/keylayout/Vendor_18d1_Product_5018.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1949_Product_0401.kl:system/usr/keylayout/Vendor_1949_Product_0401.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1bad_Product_f016.kl:system/usr/keylayout/Vendor_1bad_Product_f016.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1bad_Product_f023.kl:system/usr/keylayout/Vendor_1bad_Product_f023.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1bad_Product_f027.kl:system/usr/keylayout/Vendor_1bad_Product_f027.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1bad_Product_f036.kl:system/usr/keylayout/Vendor_1bad_Product_f036.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1d79_Product_0009.kl:system/usr/keylayout/Vendor_1d79_Product_0009.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_2378_Product_1008.kl:system/usr/keylayout/Vendor_2378_Product_1008.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_2378_Product_100a.kl:system/usr/keylayout/Vendor_2378_Product_100a.kl \
+    $(LOCAL_PATH)/configs/keylayout/Winnersun.kl:system/usr/keylayout/Winnersun.kl \
+    $(LOCAL_PATH)/configs/keylayout/XMZPG.kl:system/usr/keylayout/XMZPG.kl
 
+# IRQ
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/idc/focal-touchscreen.idc:system/usr/idc/focal-touchscreen.idc
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
+
+# IDC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/idc/ASUS_TransKeyboard.idc:system/usr/idc/ASUS_TransKeyboard.idc \
+    $(LOCAL_PATH)/configs/idc/AVRCP.idc:system/usr/idc/AVRCP.idc \
+    $(LOCAL_PATH)/configs/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+    $(LOCAL_PATH)/configs/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
+    $(LOCAL_PATH)/configs/idc/Vendor_0b05_Product_17fc.idc:system/usr/idc/Vendor_0b05_Product_17fc.idc \
+    $(LOCAL_PATH)/configs/idc/Vendor_0b05_Product_1803.idc:system/usr/idc/Vendor_0b05_Product_1803.idc \
+    $(LOCAL_PATH)/configs/idc/Vendor_0b05_Product_5000.idc:system/usr/idc/Vendor_0b05_Product_5000.idc
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -357,16 +447,29 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_wlan_nv_Phoenix.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Phoenix.bin \
     $(LOCAL_PATH)/configs/wifi/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
+
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/gps.cfg:system/etc/gps.cfg \
+    $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/configs/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/configs/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/configs/gps/lowi.conf:system/etc/lowi.conf \
+    $(LOCAL_PATH)/configs/gps/sap.conf:system/etc/sap.conf \
+    $(LOCAL_PATH)/configs/gps/xtwifi.conf:system/etc/xtwifi.conf
 
 PRODUCT_PACKAGES += \
     libcurl \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
     tcpdump \
     wcnss_service
 
@@ -404,18 +507,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/asus.hardware.display.splendid.reading_mode.xml:system/etc/permissions/asus.hardware.display.splendid.reading_mode.xml \
     $(LOCAL_PATH)/configs/permissions/asus.hardware.display.splendid.xml:system/etc/permissions/asus.hardware.display.splendid.xml
 
-PRODUCT_PACKAGES += \
-    AsusSplendidCommandAgent
-
 # FlipCover
 PRODUCT_PACKAGES += \
     FlipCoverWrapper
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/asus.software.cover3_feature_1.xml:/system/etc/permissions/asus.software.cover3_feature_1.xml \
-    $(LOCAL_PATH)/configs/permissions/asus.hardware.transcover_version3.xml:/system/etc/permissions/asus.hardware.transcover_version3.xml \
-    $(LOCAL_PATH)/configs/permissions/asus.hardware.transcover.xml:/system/etc/permissions/asus.hardware.transcover.xml \
-    $(LOCAL_PATH)/configs/permissions/asus.hardware.transcover_info.xml:/system/etc/permissions/asus.hardware.transcover_info.xml
 
 # dataservice
 PRODUCT_PACKAGES += \
