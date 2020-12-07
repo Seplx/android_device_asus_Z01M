@@ -165,6 +165,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml
 
 # Volume tables
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/default_volume_non_eu_tables.xml:system/etc/default_volume_non_eu_tables.xml \
     $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:system/etc/default_volume_tables.xml
 
