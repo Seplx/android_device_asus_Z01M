@@ -391,9 +391,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/capability.xml:system/etc/capability.xml \
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -477,16 +474,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_wlan_nv_Phoenix.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_Phoenix.bin \
     $(LOCAL_PATH)/configs/wifi/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat
-
-# GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps/gps.cfg:system/etc/gps.cfg \
-    $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/gps/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/configs/gps/izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/configs/gps/lowi.conf:system/etc/lowi.conf \
-    $(LOCAL_PATH)/configs/gps/sap.conf:system/etc/sap.conf \
-    $(LOCAL_PATH)/configs/gps/xtwifi.conf:system/etc/xtwifi.conf
 
 PRODUCT_PACKAGES += \
     libcurl \
