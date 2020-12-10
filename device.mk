@@ -377,24 +377,32 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.class_main.sh \
+    init.environ.rc \
+    init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.sensors.sh \
+    init.qcom.syspart_fixup.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.class_main.sh \
-    ueventd.qcom.rc
+    init.usb.configfs.rc \
+    init.usb.rc \
+    init.zygote32.rc \
+    init.zygote64_32.rc \
+    ueventd.qcom.rc \
+    ueventd.rc \
+    sp
 
 PRODUCT_PACKAGES += \
-    init.asus.rc \
-    init.asus.usb.sh \
-    init.asus.usb.rc \
-    init.asus.thermald.rc \
     init.asus.debugtool.rc \
+    init.asus.logtool.rc \
+    init.asus.rc \
+    init.asus-user.rc \
     init.target.rc \
-    sp
+    ueventd.asus.rc
 
 # RIL
 PRODUCT_PACKAGES += \
