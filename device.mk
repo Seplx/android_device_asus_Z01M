@@ -387,12 +387,7 @@ PRODUCT_PACKAGES += \
     init.qcom.syspart_fixup.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.usb.configfs.rc \
-    init.usb.rc \
-    init.zygote32.rc \
-    init.zygote64_32.rc \
     ueventd.qcom.rc \
-    ueventd.rc \
     sp
 
 PRODUCT_PACKAGES += \
