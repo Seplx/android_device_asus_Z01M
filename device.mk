@@ -250,7 +250,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/Invensense/VStab_720x480_30_1.conf:system/etc/camera/VStab_720x480_30_1.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/bspcapability.xml:system/etc/bspcapability.xml \
+    $(LOCAL_PATH)/configs/bspcapability.xml:system/etc/bspcapability.xml
 
 # Display
 PRODUCT_PACKAGES += \
@@ -288,6 +288,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/etc/gps.cfg:system/etc/gps.cfg \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
     $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/etc/lowi.conf:system/etc/lowi.conf \
@@ -425,14 +426,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(LOCAL_PATH)/configs/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    $(LOCAL_PATH)/configs/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    $(LOCAL_PATH)/configs/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wifi/WCNSS_cfg.dat:system/etc/persist/WCNSS_cfg.dat \
+    $(LOCAL_PATH)/configs/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:system/etc/persist//WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/persist/WCNSS_qcom_wlan_nv.bin \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_wlan_nv_Phoenix.bin:system/etc/persist/WCNSS_qcom_wlan_nv_Phoenix.bin \
@@ -455,7 +456,15 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:system/etc/thermal-engine.conf
+    $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:system/etc/thermal-engine.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-8064ab.conf:system/etc/thermal-engine-8064ab.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-8064.conf:system/etc/thermal-engine-8064.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-8930.conf:system/etc/thermal-engine-8930.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-8953.conf:system/etc/thermal-engine-8953.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-8953-zd552kl.conf:system/etc/thermal-engine-8953-zd552kl.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-8953-ze553kl.conf:system/etc/thermal-engine-8953-ze553kl.conf \
+    $(LOCAL_PATH)/configs/thermal/thermald-disabled-mode.conf:system/etc/thermald-disabled-mode.conf \
+    $(LOCAL_PATH)/configs/thermal/thermald-ultimate-mode.conf:system/etc/thermald-ultimate-mode.conf
 
 # e2fsck
 PRODUCT_PACKAGES += \
