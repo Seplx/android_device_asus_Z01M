@@ -144,4 +144,9 @@ $(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS)
 
+# Symlink for wlan kernel module
+$(shell mkdir -p $(TARGET_OUT)/lib/modules; \
+    ln -sf /system/lib/modules/pronto/pronto_wlan.ko \
+	   $(TARGET_OUT)/lib/modules/wlan.ko)
+
 endif

@@ -500,6 +500,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    ZenfoneDoze
 
+#HACK: wlan kernel module
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules/pronto/pronto_wlan.ko:system/lib/modules/pronto/pronto_wlan.ko
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
