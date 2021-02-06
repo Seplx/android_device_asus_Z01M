@@ -67,7 +67,7 @@ TARGET_KERNEL_CONFIG := ZD552KL-Phoenix-perf_defconfig
 #TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 #TODO: Fix audio
-# Audio 
+# Audio
 # WSA8815 props, based on  LineageOS/android_device_xiaomi_msm8996-common cm-14.1
 #AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
@@ -106,9 +106,9 @@ AUDIO_FEATURE_ENABLED_SSR := false
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 AUDIO_FEATURE_ENABLED_3D_AUDIO := true
-	
-	
-	
+
+
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -244,4 +244,3 @@ TARGET_USES_QCOM_WCNSS_QMI := true
 
 # inherit from the proprietary version
 -include vendor/asus/Z01M/BoardConfigVendor.mk
-

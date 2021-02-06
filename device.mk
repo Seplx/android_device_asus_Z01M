@@ -287,13 +287,13 @@ PRODUCT_PACKAGES += \
     libgnsspps
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps//gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/gps//gps.cfg:system/etc/gps.cfg \
-    $(LOCAL_PATH)/configs/gps//flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/configs/gps//izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/configs/gps//lowi.conf:system/etc/lowi.conf \
-    $(LOCAL_PATH)/configs/gps//sap.conf:system/etc/sap.conf \
-    $(LOCAL_PATH)/configs/gps//xtwifi.conf:system/etc/xtwifi.conf
+    $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/configs/gps/gps.cfg:system/etc/gps.cfg \
+    $(LOCAL_PATH)/configs/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/configs/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/configs/gps/lowi.conf:system/etc/lowi.conf \
+    $(LOCAL_PATH)/configs/gps/sap.conf:system/etc/sap.conf \
+    $(LOCAL_PATH)/configs/gps/xtwifi.conf:system/etc/xtwifi.conf
 
 # Ebtables
 PRODUCT_PACKAGES += \
